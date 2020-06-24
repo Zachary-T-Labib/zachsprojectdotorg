@@ -1,0 +1,17 @@
+{
+  "name": "zachary-t-labib/zachsprogramdotorg",
+  "require": {
+    "ext-mysqli": "*",
+    "ext-ctype": "*",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Codecourse\\": "app/Codecourse",
+      "zach\\": "app/zach"
+    },
+    "config": {
+      "optimize-autoloader": true
+    }
+  }
+}
