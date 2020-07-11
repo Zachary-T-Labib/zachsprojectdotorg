@@ -2,7 +2,7 @@
 
 <?php
 
-include 'function.php';
+include 'functions.php';
 
 redirect_to('/zl');
 
