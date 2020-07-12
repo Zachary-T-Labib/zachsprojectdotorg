@@ -18,3 +18,5 @@ $path3 = VENDOR_DIR . DIRSEP . 'autoload.php';
 $path4 = WEB_DIR . DIRSEP . 'functions.php';
 require $path3;
 require $path4;
+
+?>
