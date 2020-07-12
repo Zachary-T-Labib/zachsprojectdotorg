@@ -2,6 +2,7 @@
 
 require(__DIR__ . '/../../config.php');
 
+define('DIRSEP', DIRECTORY_SEPARATOR);
 define('WEB_DIR', PROJ_ROOT . DIRSEP . 'web');
 
 $path4 = WEB_DIR . DIRSEP . 'functions.php';
