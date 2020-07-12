@@ -32,6 +32,7 @@ $user_id = (isset($_SESSION['user_id'])) ? $_SESSION['user_id'] : 0;
 
 $user_username = (isset($_SESSION['user_username'])) ? $_SESSION['user_username'] : '';
 
+$timezone = (isset($_SESSION['timezone'])) ? $_SESSION['timezone'] : 'America/New_York';
 
 date_default_timezone_set($timezone);
 
