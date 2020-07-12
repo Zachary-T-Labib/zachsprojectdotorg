@@ -10,7 +10,7 @@ function redirect_to(string $location)
 }
 
 
-function convert_snake_case_to_pascal_case($string)
+function convert_snake_case_to_pascal_case(string $string)
 {
     return str_replace('_', '', ucwords($string, '_'));
 }
