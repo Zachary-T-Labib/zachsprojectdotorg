@@ -38,8 +38,6 @@ if (!empty($route_segments_array[0])) {
 
 $fully_qualified_controller_name = 'zachsprogramdotorg\controllers\\' . $controller_name;
 
-die("The controller name is {$fully_qualified_controller_name}");
-
 $controller_object = new $fully_qualified_controller_name;
 
 $method_name = 'page';
