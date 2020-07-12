@@ -8,7 +8,7 @@
   "autoload": {
     "psr-4": {
       "Codecourse\\": "app/Codecourse",
-      "zach\\": "app/zachsprogramdotorg"
+      "zachsprogramdotorg\\": "app/zachsprogramdotorg"
     },
     "config": {
       "optimize-autoloader": true
