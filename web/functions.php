@@ -10,17 +10,7 @@ function redirect_to(string $location)
 }
 
 
-function CamelCase($string, $capitalizeFirstCharacter = false) 
+function convert_snake_case_to_pascal_case($string)
 {
-
-    $str = str_replace('-', '', ucwords($string, '-'));
-
-    if (!$capitalizeFirstCharacter) {
-        $str = lcfirst($str);
-    }
-
-    return $str;
+    return str_replace('_', '', ucwords($string, '_'));
 }
-	
-
-?>
