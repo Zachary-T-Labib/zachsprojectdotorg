@@ -1,6 +1,6 @@
 <?php
 
-require(__DIR__ . '/../config.php');
+require(__DIR__ . '/../../config.php');
 
 define('WEB_DIR', PROJ_ROOT . DIRSEP . 'web');
 
