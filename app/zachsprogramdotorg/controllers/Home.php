@@ -1,5 +1,6 @@
 <?php
 
+namespace zachsprogramdotorg\controllers;
 
 class Home
 {
