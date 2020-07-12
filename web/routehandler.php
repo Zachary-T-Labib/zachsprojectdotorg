@@ -15,6 +15,6 @@ define('BOTTOM', VIEWSINCLUDES . DIRSEP . 'bottom.php');
 define('SESSIONMESSAGE', VIEWSINCLUDES . DIRSEP . 'sessionmessage.php');
 
 $path3 = VENDOR_DIR . DIRSEP . 'autoload.php';
-$path4 = LIB_PATH . DIRSEP . 'functions.php';
+$path4 = WEB_DIR . DIRSEP . 'functions.php';
 require $path3;
 require $path4;
