@@ -11,11 +11,13 @@ define('VIEWS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIR
 define('VIEWSINCLUDES', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ViewsIncludes');
 define('CONTROLLERHELPERS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ControllerHelpers');
 define('CONTROLLERINCLUDES', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ControllerIncludes');
+
 define('TOPMOST', VIEWSINCLUDES . DIRSEP . 'topmost.php');
 define('BOTTOMMOST', VIEWSINCLUDES . DIRSEP . 'bottommost.php');
 define('BOTTOM', VIEWSINCLUDES . DIRSEP . 'bottom.php');
 define('SESSIONMESSAGE', VIEWSINCLUDES . DIRSEP . 'sessionmessage.php');
 define('URLOFMOSTRECENTUPLOAD', VIEWSINCLUDES . DIRSEP . 'urlofmostrecentupload.php');
+
 
 $path3 = VENDOR_DIR . DIRSEP . 'autoload.php';
 $path4 = WEB_DIR . DIRSEP . 'functions.php';
