@@ -9,6 +9,8 @@ define('VENDOR_DIR', PROJ_ROOT . DIRSEP . 'vendor');
 
 define('VIEWS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'Views');
 define('VIEWSINCLUDES', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ViewsIncludes');
+define('CONTROLLERHELPERS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ControllerHelpers');
+define('CONTROLLERINCLUDES', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ControllerIncludes');
 define('TOPMOST', VIEWSINCLUDES . DIRSEP . 'topmost.php');
 define('BOTTOMMOST', VIEWSINCLUDES . DIRSEP . 'bottommost.php');
 define('BOTTOM', VIEWSINCLUDES . DIRSEP . 'bottom.php');
