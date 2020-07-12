@@ -21,4 +21,25 @@ $path4 = WEB_DIR . DIRSEP . 'functions.php';
 require $path3;
 require $path4;
 
+session_start();
+
+$sessionMessage = (isset($_SESSION['message'])) ? $_SESSION['message'] : '';
+$_SESSION['message'] = '';
+
+$url_of_most_recent_upload = (isset($_SESSION['url_of_most_recent_upload'])) ? $_SESSION['url_of_most_recent_upload'] : '';
+
+$user_id = (isset($_SESSION['user_id'])) ? $_SESSION['user_id'] : 0;
+
+$user_username = (isset($_SESSION['user_username'])) ? $_SESSION['user_username'] : '';
+
+
+date_default_timezone_set($timezone);
+
+if (!empty($_SERVER['PATH_INFO'])) {
+    $route = rtrim($_SERVER['PATH_INFO'], '/ ');
+    $route = ltrim($route, '/');
+    $route = filter_var($route, FILTER_SANITIZE_URL);
+    $route_segments_array = explode('/', $route);
+}
+
 ?>
