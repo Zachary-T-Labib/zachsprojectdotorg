@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ToDo List Application PHP </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title link rel="stylesheet" type="text/css" href="style.css">ToDo List Application PHP </title>
 </head>
 <body>
 	<div class="heading">
