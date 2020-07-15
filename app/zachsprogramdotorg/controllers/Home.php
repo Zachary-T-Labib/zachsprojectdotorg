@@ -7,5 +7,7 @@ class Home
     function page()
     {
         echo "It works!";
+		
+		require VIEWS . DIRSEP . 'todo.php';
     }
 }
