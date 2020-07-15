@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>ToDo List Application PHP </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 	<div class="heading">
