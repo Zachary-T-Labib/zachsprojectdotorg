@@ -1,7 +1,7 @@
 var ab = {
 	ajax: function (data, after) {
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', "2c-ajax-address.php", true);
+		xhr.open('POST', "/zachsprogramdotorg/app/zachsprogramdotorg/models/php-crud/2c-ajax-address.php", true);
 		xhr.onload = function () {
       if (xhr.status==403 || xhr.status==404) {
         alert("ERROR LOADING FILE");
