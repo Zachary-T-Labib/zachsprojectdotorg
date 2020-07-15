@@ -6,6 +6,6 @@ class Home
 {
     function page()
     {
-		require VIEWS . DIRSEP . 'todo.php';
+		require '/zachsprogramdotorg/app/zachsprogramdotorg/models/php-crud/3a-address.html';
     }
 }
