@@ -9,5 +9,5 @@ ADD PRIMARY KEY (`id`);
 ALTER TABLE `task_book`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
-INSERT INTO `task_book` (`id`, `address`) VALUES
+INSERT INTO `task_book` (`id`, `task`) VALUES
 (1, 'Work on web application');
