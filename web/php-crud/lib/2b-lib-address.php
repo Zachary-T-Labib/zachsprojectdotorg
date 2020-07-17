@@ -1,5 +1,5 @@
 <?php
-class Address{
+class Task{
   private $pdo = null;
   private $stmt = null;
 
@@ -33,10 +33,10 @@ class Address{
     return true;
   }
 
-  function create($address){
+  function create($task){
     return $this->query(
       "INSERT INTO `task_book` (`task`) VALUES (?)",
-      [$address]
+      [$task]
     );
   }
 
@@ -47,7 +47,7 @@ class Address{
     return count($entries)==0 ? false : $entries ;
   }
 
-  function update($address, $id){
+  function update($task, $id){
     return $this->query(
       "UPDATE `task_book` SET `task`=? WHERE `id`=?",
       [$task, $id]
