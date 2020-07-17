@@ -16,7 +16,7 @@ var ab = {
 	prime: function (id) {
 		document.getElementById("ab_form_head").innerHTML = id==0 ? "Add Entry" : "Edit Entry" ;
 		document.getElementById("form_id").value = id==0 ? "" : id ;
-		document.getElementById("form_address").value = id==0 ? "" : document.getElementById("addr"+id).innerHTML ;
+		document.getElementById("form_task").value = id==0 ? "" : document.getElementById("addr"+id).innerHTML ;
 		document.getElementById("btn_save").onclick = id==0 ? ab.create : ab.update ;
 		document.getElementById("ab_form").style.display = "block";
 	},
