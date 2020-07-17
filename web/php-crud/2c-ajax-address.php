@@ -2,7 +2,7 @@
 // INIT
 require __DIR__ . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "2a-config.php";
 require PATH_LIB . "2b-lib-address.php";
-$abLib = new Address();
+$abLib = new Task();
 $pass = true;
 $message = "";
 $data = null;
