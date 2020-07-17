@@ -63,7 +63,7 @@ var ab = {
 		var data = new FormData();
 		data.append('req', 'update');
 		data.append('id', document.getElementById("form_id").value);
-		data.append('task', document.getElementById("form_address").value);
+		data.append('task', document.getElementById("form_task").value);
 		ab.ajax(data, function(res){
 			var message = "";
 			if (res.status == true) {
