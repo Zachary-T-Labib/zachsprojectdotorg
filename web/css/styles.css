@@ -6,9 +6,9 @@
 
 #footerbar {
     background-color: rgba(32, 178, 170, 0.42);
-    opacity: 0.86;
+    opacity: 1.11;
     position: static;
-    width: 1024px;
+    width: 750px;
     padding: 1px 0 1px 0;
     margin: auto;
     clear: both;
