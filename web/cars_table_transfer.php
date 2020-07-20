@@ -1,4 +1,6 @@
 <?php
 
-require '/zachsprojectdotorg/app/zachsprogramdotorg/views/car_table.php' ?>
+require VIEWS . DIRSEP . 'car_table.html'
+	
+	?>
 
