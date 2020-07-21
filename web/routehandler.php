@@ -8,7 +8,7 @@ define('VENDOR_DIR', PROJ_ROOT . DIRSEP . 'vendor');
 
 define('VIEWS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'views');
 define('FOOTERBAR', VIEWS . DIRSEP . 'footerbar.php');
-define('TOPPER', VIEWS . DIRSEP . 'toppper.php');
+define('TOPPER', VIEWS . DIRSEP . 'topper.php');
 
 $path3 = VENDOR_DIR . DIRSEP . 'autoload.php';
 $path4 = WEB_DIR . DIRSEP . 'functions.php';
