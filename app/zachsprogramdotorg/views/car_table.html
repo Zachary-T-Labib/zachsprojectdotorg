@@ -4,9 +4,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/styles.css">
 
+<?php
+
+define('PROJ_ROOT', '/zachsprogramdotorg')
+define('DIRSEP', DIRECTORY_SEPARATOR);
+define('WEB_DIR', PROJ_ROOT . DIRSEP . 'web');
+define('VENDOR_DIR', PROJ_ROOT . DIRSEP . 'vendor');
+define('VIEWS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'views');
+define('TOPPER', VIEWS . DIRSEP . 'topper.php');
+
+?>
+
+
 <body>
 	
 	<?php require TOPPER; ?>
+	
 	
 	<div class="content">
 		<center><h1>_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_</h1></center>
