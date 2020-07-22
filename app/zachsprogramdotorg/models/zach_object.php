@@ -2,7 +2,8 @@
 
 namespace zachsprogramdotorg\models;
 
-
+use Exception;
+use mysqli;
 
 abstract class ZachObject
 {
