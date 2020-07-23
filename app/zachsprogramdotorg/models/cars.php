@@ -1,6 +1,6 @@
 <?php
 
-namespace zachsprogramdotorg/models;
+namespace zachsprogramdotorg\models;
 
 class Cars extends ZachObject
 {
