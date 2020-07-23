@@ -11,7 +11,7 @@ abstract class ZachObject
 	
 	public $id;
 	
-	protected statis $fields = ['id'];
+	protected static $fields = ['id'];
 	
 	protected static $table_name = "zachobjects";
 	
