@@ -3,7 +3,7 @@
 <head>
 <?php
 
-use zachsprogramdotorg\models\cars; 
+use zachsprogramdotorg\models\Cars; 
 
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,6 +38,7 @@ define('TOPPER', VIEWS . DIRSEP . 'topper.php');
 		<p></p>
 		<p></p>
 		<p></p>
+        <?php attributes() ?>
         <?php if (!empty($array)): ?>
             <?php foreach ($array as $key => $object): ?>
                 <p>⇀ <em><?= $object->LicensePlate ?></em> ◜ <?= $object->Type ?> ⇁ <?= $object->Brand ?> ◜ <?= $object->Brand ?></p>
