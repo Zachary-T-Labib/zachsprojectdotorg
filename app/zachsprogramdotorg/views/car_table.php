@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php use zachsprogramdotorg\models\cars; ?>
+<?php
+
+use zachsprogramdotorg\models\cars; 
+
+?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/styles.css">
 <script src="/web/car_script.php"></script>
