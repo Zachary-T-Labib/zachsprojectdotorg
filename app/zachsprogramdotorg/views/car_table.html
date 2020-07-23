@@ -33,13 +33,13 @@ define('TOPPER', VIEWS . DIRSEP . 'topper.php');
 		<p></p>
 		<p></p>
 		<p></p>
-        <input type="button" class="green" value="Reload" onclick="<?php if (!empty($array)): ?>
+        <?php if (!empty($array)): ?>
             <?php foreach ($array as $key => $object): ?>
                 <p>⇀ <em><?= $object->LicensePlate ?></em> ◜ <?= $object->Type ?> ⇁ <?= $object->Brand ?> ◜ <?= $object->Brand ?></p>
             <?php endforeach; ?>
         <?php else: ?>
             <p>There are no cars.</p>
-        <?php endif; ?>"/>
+        <?php endif; ?>
 	</div>
 		
 		
