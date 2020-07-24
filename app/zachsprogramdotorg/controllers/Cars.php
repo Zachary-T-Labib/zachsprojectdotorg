@@ -2,7 +2,7 @@
 
 namespace zachsprogramdotorg\controllers;
 
-use zachsprogramdotorg\models\Cars;
+use zachsprogramdotorg\models\CarsObject;
 
 class Cars
 {
