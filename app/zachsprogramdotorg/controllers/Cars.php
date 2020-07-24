@@ -2,11 +2,12 @@
 
 namespace zachsprogramdotorg\controllers;
 
+use zachsprogramdotorg\models\Cars
+
 class Cars
 {
 	function page()
-	{
-		use zachsprogramdotorg\models\Cars;
+    {
 		
 		require VIEWS . DIRSEP . 'car_table.php';
 	}
