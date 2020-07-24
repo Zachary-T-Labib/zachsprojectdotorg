@@ -10,12 +10,6 @@ use zachsprogramdotorg\models\Cars;
 <link rel="stylesheet" href="/css/styles.css">
 <script src="/web/car_script.php"></script>
 
-<?php
-
-define('TOPPER', VIEWS . DIRSEP . 'topper.php');
-
-?>
-
 
 <body>
 	
