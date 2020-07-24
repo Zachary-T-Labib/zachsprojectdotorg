@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php
-
-use zachsprogramdotorg\models\Cars; 
-
-?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/styles.css">
 <script src="/web/car_script.php"></script>
