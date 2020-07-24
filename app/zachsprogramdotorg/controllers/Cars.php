@@ -6,6 +6,6 @@ class Cars
 {
 	function page()
 	{
-		require VIEWS . DIRSEP . 'cars_table.php';
+		require VIEWS . DIRSEP . 'car_table.php';
 	}
 }
