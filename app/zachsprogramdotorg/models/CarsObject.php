@@ -2,7 +2,7 @@
 
 namespace zachsprogramdotorg\models;
 
-class Cars extends ZachObject
+class CarsObject extends ZachObject
 {
 	
 	protected static $table_name = cars
