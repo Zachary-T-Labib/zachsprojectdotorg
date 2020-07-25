@@ -246,11 +246,11 @@ abstract class ZachObject
 
 		          }
 		      }
-	          
-			  @param mysqli $db
-			  @param string $error
-			  @return bool
-			  
+	          /**
+			  *@param mysqli $db
+			  *@param string $error
+			  *@return bool
+			  */
 			  public function save(mysqli $db, string &$error)
 			      {
 			          // A database object without an id is one that has never been saved in the database.
