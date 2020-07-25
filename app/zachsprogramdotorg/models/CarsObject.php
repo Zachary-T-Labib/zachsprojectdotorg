@@ -5,9 +5,9 @@ namespace zachsprogramdotorg\models;
 class CarsObject extends ZachObject
 {
 	
-	protected static $table_name = cars
+	protected static $table_name = "CarsObject";
 		
-	protected static $fields = ['id', 'LicensePlate', 'Type', 'Brand', 'Seats']
+	protected static $fields = ['id', 'LicensePlate', 'Type', 'Brand', 'Seats'];
 		
 	public $id;
 	

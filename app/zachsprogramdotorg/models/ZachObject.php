@@ -13,7 +13,7 @@ abstract class ZachObject
 	
 	protected static $fields = ['id'];
 	
-	protected static $table_name = "zachobjects";
+	protected static $table_name = "ZachObject";
 	
 	
 	
