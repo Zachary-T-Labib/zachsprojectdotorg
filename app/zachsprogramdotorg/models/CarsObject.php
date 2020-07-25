@@ -4,33 +4,33 @@ namespace zachsprogramdotorg\models;
 
 class CarsObject extends ZachObject
 {
-	
-	@var string
-	
+	/**
+	*@var string
+	*/
 	protected static $table_name = "carsobject";
-		
-	@var array
-		
+	/**	
+	*@var array
+	*/
 	protected static $fields = ['id', 'LicensePlate', 'Type', 'Brand', 'Seats'];
-		
-	@var int
-		
+	/**
+	*@var int
+	*/
 	public $id;
-	
-	@var string
-	
+	/**
+	*@var string
+	*/
 	public $LicensePlate;
-	
-	@var string
-	
+	/**
+	*@var string
+	*/
 	public $Type;
-	
-	@var string
-	
+	/**
+	*@var string
+	*/
 	public $Brand;
-	
-	@var int
-	
+	/**
+	*@var int
+	*/
 	public $Seats;
 }
 
