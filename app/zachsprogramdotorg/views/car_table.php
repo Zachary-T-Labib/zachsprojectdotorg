@@ -25,7 +25,6 @@
 		<p></p>
 		<p></p>
 		<p></p>
-        <?php attributes() ?>
         <?php if (!empty($array)): ?>
             <?php foreach ($array as $key => $object): ?>
                 <p>⇀ <em><?= $object->LicensePlate ?></em> ◜ <?= $object->Type ?> ⇁ <?= $object->Brand ?> ◜ <?= $object->Brand ?></p>
