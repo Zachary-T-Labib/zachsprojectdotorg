@@ -12,3 +12,5 @@ class Cars
 		require VIEWS . DIRSEP . 'car_table.php';
 	}
 }
+
+?>
