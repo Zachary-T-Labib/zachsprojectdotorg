@@ -4,8 +4,6 @@ namespace zachsprogramdotorg\controllers;
 
 use zachsprogramdotorg\models\CarsObject;
 
-attributes();
-
 class Cars
 {
 	function page()
