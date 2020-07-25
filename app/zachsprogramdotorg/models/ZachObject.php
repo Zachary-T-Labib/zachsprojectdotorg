@@ -13,11 +13,13 @@ abstract class ZachObject
 	
 	protected static $fields = ['id'];
 	
-	protected static $table_name = "ZachObject";
+	protected static $table_name = "zachsobject";
 	
 	
 	
 	// METHODS
+	
+	@return array
 	
 	public function attributes()
 	    {
@@ -34,6 +36,9 @@ abstract class ZachObject
 	        return $attributes;
 	    }
 	
+		@param mysqli $db
+		@return array
+	
 	protected function sanitized_attributes(mysqli $db)
 		    {
 		        $clean_attributes = [];
@@ -46,6 +51,10 @@ abstract class ZachObject
 
 		        return $clean_attributes;
 		    }
+			
+			@param array $array
+			@return ZachObject
+			
 	 public static function array_to_object(array $array)
 		       {
 		           $object_in_memory = new static();
@@ -61,7 +70,10 @@ abstract class ZachObject
 
 		           return $object_in_memory;
 		       }
-     
+			   
+			   @param string $possible_attribute
+			   @return bool
+				   
 	  protected function has_attribute(string $possible_attribute)
 			       {
 			           return array_key_exists($possible_attribute, $this->attributes());
@@ -71,6 +83,10 @@ abstract class ZachObject
 	  
 	  
 	  // Create
+	  
+	  @param mysqli $db
+	  @param string $error
+	  @return bool
 	  
 	  protected function create(mysqli $db, string &$error)
 	      {
@@ -147,7 +163,12 @@ abstract class ZachObject
 
 	          }
 	      }
-	
+		  
+		   @param mysqli $db
+		   @param string $error
+		   @param array $objects_array
+		   @return bool
+			   
 		  public static function insert_multiple_objects(mysqli $db, string &$error, array $objects_array)
 		      {
 		          /**
@@ -235,6 +256,10 @@ abstract class ZachObject
 				  
 	// Read
 	
+	@param mysqli $db
+	@param string $error
+	@return bool|mixed
+	
 	public static function count_all(mysqli $db, string &$error)
 	    {
 	        $sql = "SELECT COUNT(*) FROM " . static::$table_name;
@@ -272,11 +297,19 @@ abstract class ZachObject
 	        return array_shift($row);
 	    }
 		
+		@param mysqli $db
+		@param string $error
+		@return array|bool
 		
 	public static function find_all(mysqli $db, string &$error)
 		    {
 		        return static::find_by_sql($db, $error, "SELECT * FROM " . static::$table_name);
 		    }
+			
+			@param mysqli $db
+			@param string $error
+			@param $id
+			@return bool|mixed	
 			
 	public static function find_by_id(mysqli $db, string &$error, $id)
 			    {
@@ -289,6 +322,10 @@ abstract class ZachObject
 	
 	
 	// Update
+	
+	@param mysqli $db
+	@param string $error
+	@return bool
 	
 	protected function update(mysqli $db, string &$error)
 	    {
@@ -373,6 +410,10 @@ abstract class ZachObject
 		
 		
 	// Delete
+	
+	  @param mysqli $db
+	  @param string $error
+	  @return bool
 	
 	public function delete(mysqli $db, string &$error)
 	    {
