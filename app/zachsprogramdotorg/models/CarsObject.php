@@ -33,11 +33,10 @@ class CarsObject extends ZachObject
 	*/
 	public $Seats;
 
-        parent::attributes();
+        attributes();
 
-        parent::array_to_object($array);
+        array_to_object($array);
 
-        parent::save();
+        save();
 }
 
-?>
