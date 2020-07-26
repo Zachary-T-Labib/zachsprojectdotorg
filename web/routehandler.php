@@ -27,10 +27,6 @@ if (!empty($_SERVER['PATH_INFO'])) {
     $route_segments_array = explode('/', $route);
 }
 
-var_dump($route_segments_array);
-
-	die("Debug Test");
-
 $controller_name = 'Home';    // Default controller
 
 if (!empty($route_segments_array[0])) {
