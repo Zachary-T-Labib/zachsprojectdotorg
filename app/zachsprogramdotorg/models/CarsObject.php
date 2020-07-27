@@ -32,11 +32,5 @@ class CarsObject extends ZachObject
 	*@var int
 	*/
 	public $Seats;
-
-        attributes();
-
-        array_to_object($array);
-
-        save();
 }
 
