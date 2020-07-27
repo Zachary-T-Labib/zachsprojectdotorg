@@ -323,6 +323,51 @@ abstract class ZachObject
 			        return !empty($result_array) ? array_shift($result_array) : false;
 			    }
 				
+	 /**
+     * @param mysqli $db
+     * @param string $error
+     * @param string $sql
+     * @return array|bool
+     */
+	
+	 public static function find_by_sql(mysqli $db, string &$error, string $sql)
+	     {
+	         $object_array = [];
+
+	         try {
+	             $result = $db->query($sql);
+
+	             $query_error = $db->error;
+
+	             if (!empty(trim($query_error))) {
+
+	                 $error .= ' GoodObject find_by_sql failed. The reason given by mysqli is: ' . htmlspecialchars($query_error, ENT_NOQUOTES | ENT_HTML5) . ' ';
+
+	                 return false;
+
+	             }
+	         } catch (Exception $e) {
+
+	             $error .= ' GoodObject find_by_sql() caught a thrown exception: ' . htmlspecialchars($e->getMessage(), ENT_NOQUOTES | ENT_HTML5) . ' ';
+
+	             return false;
+
+	         }
+
+	         while ($row = $result->fetch_assoc()) {
+
+	             $object_array[] = static::array_to_object($row);
+
+	         }
+
+	         if (empty($object_array)) {
+
+	             return false;
+
+	         }
+
+	         return $object_array;
+	     }
 	
 	
 	// Update
