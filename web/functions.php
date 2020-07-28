@@ -1,5 +1,6 @@
 <?php
 
+$newMessage = "Hello";
 
 function redirect_to(string $location)
 {
@@ -16,6 +17,16 @@ function convert_snake_case_to_pascal_case(string $string)
     return str_replace('_', '', ucwords($string, '_'));
 }
 
+function breakout(string $newMessage)
+{
+    global $sessionMessage;
+
+    $sessionMessage = "Hello";
+
+    $_SESSION['message'] = $sessionMessage . $newMessage;
+    reset_feature_session_vars();
+    redirect_to("/zl/Home/page");
+}
 
 function get_db()
 {
