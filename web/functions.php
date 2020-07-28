@@ -17,6 +17,14 @@ function convert_snake_case_to_pascal_case(string $string)
     return str_replace('_', '', ucwords($string, '_'));
 }
 
+function reset_feature_session_vars()
+{
+    $_SESSION['saved_str01'] = '';
+    $_SESSION['saved_str02'] = '';
+    $_SESSION['saved_int01'] = 0;
+    $_SESSION['saved_int01'] = 0;
+}
+
 function breakout(string $newMessage)
 {
     global $sessionMessage;
