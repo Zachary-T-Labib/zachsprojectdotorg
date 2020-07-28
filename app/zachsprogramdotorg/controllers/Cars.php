@@ -8,6 +8,9 @@ class Cars
 {
 	function page()
     {
+		
+		$user_id = "";
+		
 		$db = get_db();
 		
 		$sql = 'SELECT * FROM `carsobject` = ' . $db->real_escape_string($user_id);

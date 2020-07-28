@@ -51,10 +51,10 @@ abstract class ZachObject
 
 		        return $clean_attributes;
 		    }
-			
-			@param array $array
-			@return ZachObject
-			
+			/**
+			*@param array $array
+			*@return ZachObject
+			*/
 	 public static function array_to_object(array $array)
 		       {
 		           $object_in_memory = new static();
@@ -70,10 +70,10 @@ abstract class ZachObject
 
 		           return $object_in_memory;
 		       }
-			   
-			   @param string $possible_attribute
-			   @return bool
-				   
+			   /**
+			   *@param string $possible_attribute
+			   *@return bool
+				*/   
 	  protected function has_attribute(string $possible_attribute)
 			       {
 			           return array_key_exists($possible_attribute, $this->attributes());
