@@ -8,12 +8,11 @@ class Cars
 {
 	function page()
     {
-		
-		$user_id = "";
+		$sessionMessage = "Working";
 		
 		$db = get_db();
 		
-		$sql = 'SELECT * FROM `carsobject` = ' . $db->real_escape_string($user_id);
+		$sql = 'SELECT * FROM `carsobject` = ';
 		$array = CarsObject::find_by_sql($db, $sessionMessage, $sql);
 		
 		if (!$array || !empty($sessionMessage)) {
