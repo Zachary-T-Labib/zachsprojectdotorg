@@ -18,9 +18,9 @@ abstract class ZachObject
 	
 	
 	// METHODS
-	
-	@return array
-	
+	/**
+	*@return array
+	*/
 	public function attributes()
 	    {
 	        $attributes = [];
