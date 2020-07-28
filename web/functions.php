@@ -1,5 +1,6 @@
 <?php
 
+
 function redirect_to(string $location)
 {
 	if ($location != NULL) {
@@ -19,6 +20,8 @@ function convert_snake_case_to_pascal_case(string $string)
 function get_db()
 {
     global $sessionMessage;
+
+    $sessionMessage = "Hello";
 
     $db = db_connect($sessionMessage);
 
