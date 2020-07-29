@@ -30,6 +30,9 @@
 	      <input type="button" class="green" value="Reload" onclick="<?php   ?>"/>
 	      <input type="button" class="green" value="Add Car" onclick="<?php carCreate(); ?>"/>
 	    </div>
+		<p></p>
+		<p></p>
+		<p></p>
         <?php if (!empty($array)): ?>
             <?php foreach ($array as $key => $object): ?>
                 <p>⇀ <em>License Plate: <?= $object->LicensePlate ?></em> -- Type: <?= $object->Type ?> -- Brand: <?= $object->Brand ?> -- Seats: <?= $object->Seats ?></p>

@@ -29,5 +29,5 @@
 	        <?php require SUBMITEXIT; ?>
 	</form>
 	<?php
-} ?>
+} 
 </html>
