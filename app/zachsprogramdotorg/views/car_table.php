@@ -27,8 +27,8 @@
 		<p></p>
 		<p></p>
 	    <div class="container">
-	      <input type="button" class="green" value="Reload" onclick="<?php   ?>"/>
-	      <input type="button" class="green" value="Add Car" onclick="<?php carCreate(); ?>"/>
+	      <input type="button" class="green" value="Reload" onclick="<?php   ?>" />
+	      <input type="button" class="green" value="Add Car" onclick="<?php carCreate(); ?>" />
 	    </div>
 		<p></p>
 		<p></p>
