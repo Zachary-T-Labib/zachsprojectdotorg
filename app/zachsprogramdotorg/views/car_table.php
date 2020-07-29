@@ -27,7 +27,7 @@
 		<p></p>
         <?php if (!empty($array)): ?>
             <?php foreach ($array as $key => $object): ?>
-                <p>⇀ <em><?= $object->LicensePlate ?></em> ◜ <?= $object->Type ?> ⇁ <?= $object->Brand ?> ◜ <?= $object->Brand ?></p>
+                <p>⇀ <em>License Plate: <?= $object->LicensePlate ?></em> ◜ Type: <?= $object->Type ?> ⇁ Brand: <?= $object->Brand ?> ◜ Seats: <?= $object->Seats ?></p>
             <?php endforeach; ?>
         <?php else: ?>
             <p>There are no cars.</p>
