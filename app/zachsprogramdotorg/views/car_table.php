@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php require "/zachsprogramdotorg/web/car_function.php" ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/styles.css">
 
@@ -25,6 +26,10 @@
 		<p></p>
 		<p></p>
 		<p></p>
+	    <div class="container">
+	      <input type="button" class="green" value="Reload" onclick="<?php   ?>"/>
+	      <input type="button" class="green" value="Add Car" onclick="<?php carCreate(); ?>"/>
+	    </div>
         <?php if (!empty($array)): ?>
             <?php foreach ($array as $key => $object): ?>
                 <p>⇀ <em>License Plate: <?= $object->LicensePlate ?></em> -- Type: <?= $object->Type ?> -- Brand: <?= $object->Brand ?> -- Seats: <?= $object->Seats ?></p>
