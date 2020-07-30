@@ -11,6 +11,7 @@ a.green1{
 a.exit {
 	background: white;
     cursor: pointer;
+	border-style: solid;
 	border-width: 1px;
 }
 
