@@ -2,6 +2,8 @@
 
 input.green, div.green{ background:#e5f7d9; }
 
+a.green1:link { background:#e5f7d9; }
+
 .content {
 		  max-width: 500px;
 		  margin: auto;
