@@ -28,7 +28,7 @@
 		<p></p>
 	    <div class="container">
 	      <input type="button" class="green" value="Reload" onclick="<?php   ?>" />
-	      <input type="button" class="green" value="Add Car" onclick="<?php carCreate(); ?>" />
+	      <a class="green" href="/zl/CreateCar/page">Create</a>
 	    </div>
 		<p></p>
 		<p></p>
