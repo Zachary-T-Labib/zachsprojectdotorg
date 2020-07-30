@@ -27,7 +27,7 @@
 		<p></p>
 		<p></p>
 	    <div class="container">
-	      <input type="button" class="green" value="Reload" onclick="<?php   ?>" />
+	      <input type="button" class="green" value="Reload" onclick="history.go(0)" />
 	      <a class="green1" href="/zl/CreateCar/page"> Create </a>
 	    </div>
 		<p></p>
