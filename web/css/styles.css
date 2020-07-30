@@ -2,16 +2,16 @@
 
 input.green, div.green{ background:#e5f7d9; }
 
-a.green10{ 
+a.green1{ 
 	background:#e5f7d9;
     border-style: solid;
 	border-width: 1px;
  }
 
 a.exit {
-    margin-left: 252px;
-    opacity: 0.35;
+	background: white;
     cursor: pointer;
+	border-width: 1px;
 }
 
 .createcarholder {
