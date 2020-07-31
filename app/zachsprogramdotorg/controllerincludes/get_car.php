@@ -1,7 +1,7 @@
 <?php
 
 use zachsprogramdotorg\models\CarsObject;
-use funtion zachsprogramdotorg\controllerhelpers\integer_form_field_prep;
+use function zachsprogramdotorg\controllerhelpers\integer_form_field_prep;
 
 global $sessionMessage;
 
