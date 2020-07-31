@@ -44,7 +44,7 @@
         <?php endif; ?>
 	</div>
 		
-		
+  <?php require FOOTERBAR; ?>
 
 </head>
 
