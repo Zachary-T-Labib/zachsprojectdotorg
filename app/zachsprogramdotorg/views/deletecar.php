@@ -8,7 +8,7 @@
 	<?php require TOPPER; ?>
 	
 	<div class="createcarholder">
-	<form action="/zl/DeleteCarData/page" method="post">
+	<form action="/zl/DeleteCarProcessor/page" method="post">
 		<center><h1>Delete a Car</h1></center>
 		<p></p>
 		<p></p>
