@@ -8,6 +8,7 @@ define('VENDOR_DIR', PROJ_ROOT . DIRSEP . 'vendor');
 
 define('VIEWS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'views');
 define('CONTROLLERHELPERS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'controllerhelpers');
+define('CONTROLLERINCLUDES', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'controllerincludes');
 
 define('FOOTERBAR', VIEWS . DIRSEP . 'footerbar.php');
 define('TOPPER', VIEWS . DIRSEP . 'topper.php');
