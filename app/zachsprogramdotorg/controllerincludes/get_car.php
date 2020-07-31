@@ -17,7 +17,7 @@ $_SESSION['saved_int01'] = $chosen_id;
 
 $db = get_db();
 
-$object = CarObject::find_by_id($db, $sessionMessage, $chosen_id);
+$object = CarsObject::find_by_id($db, $sessionMessage, $chosen_id);
 
 if (!$object) {
 
