@@ -9,17 +9,17 @@
 	
 	<div class="createcarholder">
 	<form action="/zl/DeleteCarData/page" method="post">
-		<h1>Delete a Car</h1>
+		<center><h1>Delete a Car</h1></center>
 		<p></p>
 		<p></p>
 		<p></p>
-		<p>Which Car?</p>
+		<h4>Which Car?</h4>
 		<section>
 			<?php /** @noinspection PhpUndefinedVariableInspection */
 			foreach ($array as $key => $object): ?>
 			<label for="c<?php echo $key; ?>" class="radio">
 				<input type="radio" id="c<?= $key ?>" name="choice" value="<?= $object->id ?>">
-				<?= $object->label ?>
+				<?= $object->LicensePlate ?>
 			</label>
 		<?php endforeach; ?>
 	    </section>
