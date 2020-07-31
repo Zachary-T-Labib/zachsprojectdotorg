@@ -8,7 +8,7 @@
 	<?php require TOPPER; ?>
 	<div class="createcarholder">
 	<form action="/zl/DeleteATaskData/page" method="post">
-		<h1>Confirm</h1>
+		<center><h1>Confirm</h1></center>
 		<p>&nbsp;</p>
 		<p><b>License Plate: </b><?php echo $object->LicensePlate; ?></p>
 	    <p><b>Type: </b><?= $object->Type ?></p>
