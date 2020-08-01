@@ -33,7 +33,7 @@ function breakout(string $newMessage)
 
     $_SESSION['message'] = $sessionMessage . $newMessage;
     reset_feature_session_vars();
-	redirect_to("/zl/Home/page");
+    echo "$sessionMessage";
 }
 
 function get_db()
