@@ -36,7 +36,6 @@ class DeleteCarData
 
 		}
 		
-		
 		$result = $object->delete($db, $sessionMessage);
 		
 		if (!$result) {

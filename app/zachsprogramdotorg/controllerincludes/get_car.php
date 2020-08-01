@@ -21,6 +21,6 @@ $object = CarsObject::find_by_id($db, $sessionMessage, $chosen_id);
 
 if (!$object) {
 
-    breakout(' Unexpectedly, I could not find that task. ');
+    breakout(' Unexpectedly, I could not find that car. ');
 
 }
