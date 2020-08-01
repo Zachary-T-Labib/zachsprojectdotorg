@@ -32,7 +32,6 @@ function breakout(string $newMessage)
     $sessionMessage = "Hello";
 
     $_SESSION['message'] = $sessionMessage . $newMessage;
-    reset_feature_session_vars();
     echo "$sessionMessage";
 }
 
