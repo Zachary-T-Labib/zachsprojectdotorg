@@ -37,7 +37,7 @@ class CreateCarData
 
 		}
 		
-		
+		redirect_to("/zl/Cars/page");
 	}
 }
 		
