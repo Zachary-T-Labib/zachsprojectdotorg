@@ -23,8 +23,11 @@ class DeleteCarData
 		if ($choice == "no") {
 
 		            breakout(' Nothing was deleted. ');
+					redirect_to("/zl/Cars/page");
 
 		}
+		
+		if ($choice == "yes") {
 		
 		$db = get_db();
 		
@@ -45,6 +48,8 @@ class DeleteCarData
 		}
 		
 		breakout(' I deleted the Task. ');
+		redirect_to("/zl/Cars/page");
+	}
 		
 	}
 }
