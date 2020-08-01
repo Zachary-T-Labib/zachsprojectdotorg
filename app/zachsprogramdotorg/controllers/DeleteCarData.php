@@ -37,7 +37,7 @@ class DeleteCarData
 		}
 		
 	    var_dump($object);
-		var_dump($db;)
+		var_dump($db);
 		var_dump($sessionMessage);
 		die("test");
 		
