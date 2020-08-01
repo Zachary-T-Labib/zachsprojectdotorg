@@ -2,7 +2,7 @@
 
 namespace zachsprogramdotorg\controllers;
 
-use zachsprogramdotorg\models\CarObject;
+use zachsprogramdotorg\models\CarsObject;
 use function zachsprogramdotorg\controllerhelpers\standard_form_field_prep;
 use function zachsprogramdotorg\controllerhelpers\yes_no_form_field_prep;
 
