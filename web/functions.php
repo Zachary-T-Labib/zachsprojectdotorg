@@ -32,7 +32,6 @@ function breakout(string $newMessage)
     $sessionMessage = "Hello";
 
     $_SESSION['message'] = $sessionMessage . $newMessage;
-    echo "$sessionMessage";
 }
 
 function get_db()
