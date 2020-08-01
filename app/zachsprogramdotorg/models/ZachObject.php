@@ -471,6 +471,9 @@ abstract class ZachObject
 	        $sql = "DELETE FROM " . static::$table_name . " ";
 	        $sql .= "WHERE `id`=" . $db->real_escape_string($this->id);
 	        $sql .= " LIMIT 1";
+			
+			var_dump($sql);
+			die("test");
 
 	        try {
 	            $db->query($sql);
