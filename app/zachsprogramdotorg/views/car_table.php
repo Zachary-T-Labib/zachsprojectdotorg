@@ -30,7 +30,9 @@
 	      <p><input type="button" class="green" value="Reload" onclick="history.go(0)" />
 	      <a class="green1" href="/zl/CreateCar/page"> Create </a>.
 		   
-		  <a class="green1" href="/zl/DeleteCar/page"> Delete </a></p>
+		  <a class="green1" href="/zl/DeleteCar/page"> Delete </a>.
+		  
+		  <a class="green1" href="/zl/UpdateCar/page"> Delete </a></p>
 	    </div>
 		<p></p>
 		<p></p>
