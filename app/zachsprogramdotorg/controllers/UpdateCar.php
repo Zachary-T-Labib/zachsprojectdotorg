@@ -22,7 +22,7 @@ class UpdateCar
 		
 		$array = CarsObject::find_by_sql($db, $sessionMessage, $sql);
 		
-        require VIEWS . DIRSEP . 'featureatask.php';
+        require VIEWS . DIRSEP . 'updatecar.php';
 		
 	}
 }
