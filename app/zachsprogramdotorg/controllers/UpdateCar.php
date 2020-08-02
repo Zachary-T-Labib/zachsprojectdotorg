@@ -18,7 +18,7 @@ class UpdateCar
 		
 		$db = get_db();
 		
-		$sql = "SELECT * FROM 'carsobject'";
+		$sql = 'SELECT * FROM `carsobject`';
 		
 		$array = CarsObject::find_by_sql($db, $sessionMessage, $sql);
 		
