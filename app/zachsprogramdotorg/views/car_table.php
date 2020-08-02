@@ -32,7 +32,7 @@
 		   
 		  <a class="green1" href="/zl/DeleteCar/page"> Delete </a>.
 		  
-		  <a class="green1" href="/zl/UpdateCar/page"> Delete </a></p>
+		  <a class="green1" href="/zl/UpdateCar/page"> Update </a></p>
 	    </div>
 		<p></p>
 		<p></p>

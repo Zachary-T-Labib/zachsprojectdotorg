@@ -1,6 +1,6 @@
 <?php
 
-namespace zachsprogramdororg\controllers;
+namespace zachsprogramdotorg\controllers;
 
 use zachsprogramdotorg\models\CarsObject;
 
