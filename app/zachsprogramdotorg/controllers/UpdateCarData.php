@@ -53,7 +53,9 @@ class UpdateCarData
 
 	        }
 	
-	breakout(" I've updated <b>{$object->label}</b>. ");
+	breakout(" I've updated <b>{$object->LicensePlate}</b>. ");
+	
+	redirect_to("/zl/Cars/page");
 	
 	       
 	}
