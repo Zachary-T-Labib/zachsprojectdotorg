@@ -21,7 +21,7 @@ class UpdateCarData
 	global $sessionMessage;
 	$sessionMessage = "Hello";
 	
-	global $_SESSION['saved_int01']
+	global $_SESSION['saved_int01'];
 	
 	
 	require_once CONTROLLERHELPERS . DIRSEP . 'standard_form_field_prep.php';
