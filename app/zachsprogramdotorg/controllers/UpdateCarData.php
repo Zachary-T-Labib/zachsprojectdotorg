@@ -19,10 +19,7 @@ class UpdateCarData
 	         */
 	
 	global $sessionMessage;
-	$sessionMessage = "Hello";
-	
-	global $_SESSION['saved_int01'];
-	
+	$sessionMessage = "Hello";	
 	
 	require_once CONTROLLERHELPERS . DIRSEP . 'standard_form_field_prep.php';
 	
@@ -32,6 +29,9 @@ class UpdateCarData
 	$edited_Seats = standard_form_field_prep('Seats', 1, 16);
 	
 	$db = get_db();
+	
+	var_dump($_SESSION['saved_int01']);
+	die("test");
 	
 	$object = CarsObject::find_by_id($db, $sessionMessage, $_SESSION['saved_int01']);
 	
