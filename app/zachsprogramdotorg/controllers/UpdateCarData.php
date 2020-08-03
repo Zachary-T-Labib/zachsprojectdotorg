@@ -33,6 +33,9 @@ class UpdateCarData
 	
 	$object = CarsObject::find_by_id($db, $sessionMessage, $_SESSION['saved_int01']);
 	
+	var_dump($object);
+	die("test");
+	
 	if (!$object) {
 
 	            breakout(' Unexpectedly I could not find that record. ');
