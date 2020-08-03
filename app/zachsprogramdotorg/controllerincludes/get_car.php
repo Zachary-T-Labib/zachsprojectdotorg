@@ -7,6 +7,8 @@ global $sessionMessage;
 
 $sessionMessage = "Hello";
 
+reset_feature_session_vars();
+
 require_once CONTROLLERHELPERS . DIRSEP . 'integer_form_field_prep.php';
 
 $chosen_id = integer_form_field_prep('choice', 1, PHP_INT_MAX);
