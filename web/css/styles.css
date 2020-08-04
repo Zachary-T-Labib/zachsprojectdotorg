@@ -16,7 +16,7 @@ a.exit {
 }
 
 .mainholder {
-	background-image: url(/img/mainholder.png);
+	background-image: url(/img/mainholder.jpg);
 	height: 950px;
 	max-width: 1100px;
 	margin: auto;
@@ -57,7 +57,6 @@ a.exit {
 
 #footerbar {
     background-color: rgba(32, 178, 170, 0.42);
-    opacity: 1.11;
     position: static;
     width: 1000px;
     padding: 1px 0 1px 0;
@@ -71,7 +70,6 @@ a.exit {
 
 #topper {
     background-color: rgba(32, 178, 170, 0.42);
-    opacity: 1.11;
     position: static;
     width: 750px;
     padding: 1px 0 1px 0;
