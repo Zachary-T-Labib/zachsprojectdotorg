@@ -16,7 +16,8 @@ a.exit {
 }
 
 .mainholder {
-	height: 1100px;
+	background-image: url(/img/mainholder.png);
+	height: 950px;
 	max-width: 1100px;
 	margin: auto;
 	padding: 5px;
