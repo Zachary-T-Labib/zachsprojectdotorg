@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+	<div class="mainholder">
 	<?php require TOPPER; ?>
 	<div class="createcarholder">
 	<form action="/zl/DeleteCarData/page" method="post">
@@ -30,6 +31,7 @@
 	</form>
     </div>
 <?php require FOOTERBAR; ?>
+   </div>
 </body>
 </html>
 	

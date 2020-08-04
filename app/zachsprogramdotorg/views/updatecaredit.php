@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+	<div class="mainholder">
 	<?php require TOPPER; ?>
 	
 	<div class="createcarholder">
@@ -36,5 +37,6 @@
 	</form>
     </div>
 	<?php require FOOTERBAR; ?>
+   </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="/css/styles.css">
 
 <body>
-	
+	<div class="mainholder">
 	<?php require TOPPER; ?>
 	
 	
@@ -47,6 +47,7 @@
 	</div>
 		
   <?php require FOOTERBAR; ?>
+  </div>
 
 </head>
 
