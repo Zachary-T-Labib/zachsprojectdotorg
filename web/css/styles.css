@@ -15,6 +15,15 @@ a.exit {
 	border-width: 1px;
 }
 
+.mainholder {
+	max-width: 1100;
+	max-height: 1500;
+	margin: auto;
+	opacity: 0.9;
+	padding: 5;
+	background: white;
+}
+
 .createcarholder {
   max-width: 650px;
   margin: auto;
@@ -34,7 +43,7 @@ a.exit {
 		}
 		
 .car_holder {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
   background: cyan;
   padding: 10px;
