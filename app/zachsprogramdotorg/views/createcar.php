@@ -9,7 +9,7 @@
 	
 	<div class="createcarholder">
 	<form action="/zl/CreateCarData/page" method="post">
-		<h1>Create a Car</h1>
+		<center><h1>Create a Car</h1></center>
 	    <section>
 	        <p>
 	            <label for="LicensePlate">License Plate: </label>
