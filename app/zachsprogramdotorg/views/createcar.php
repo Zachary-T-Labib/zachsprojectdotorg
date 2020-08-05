@@ -8,6 +8,10 @@
 	<div class="mainholder">
 	<?php require TOPPER; ?>
 	
+	<p></p>
+	<p></p>
+	<p></p>
+	
 	<div class="createcarholder">
 	<form action="/zl/CreateCarData/page" method="post">
 		<center><h1>Create a Car</h1></center>
@@ -37,6 +41,11 @@
 	</form>
 </div>
 	<?php require FOOTERBAR; ?>
+	
+	<p></p>
+	<p></p>
+	<p></p>
+	
    </div>
 	
 	</html>

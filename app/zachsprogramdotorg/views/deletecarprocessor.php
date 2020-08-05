@@ -7,6 +7,11 @@
 <body>
 	<div class="mainholder">
 	<?php require TOPPER; ?>
+	
+	<p></p>
+	<p></p>
+	<p></p>
+	
 	<div class="createcarholder">
 	<form action="/zl/DeleteCarData/page" method="post">
 		<center><h1>Confirm</h1></center>
@@ -30,6 +35,11 @@
 		<?php require SUBMITEXIT; ?>
 	</form>
     </div>
+	
+	<p></p>
+	<p></p>
+	<p></p>
+	
 <?php require FOOTERBAR; ?>
    </div>
 </body>

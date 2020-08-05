@@ -8,6 +8,10 @@
 	<div class="mainholder">
 	<?php require TOPPER; ?>
 	
+	<p></p>
+	<p></p>
+	<p></p>
+	
 	<div class="createcarholder">
 	<form action="/zl/DeleteCarProcessor/page" method="post">
 		<center><h1>Delete a Car</h1></center>
@@ -27,6 +31,10 @@
 		<?php require SUBMITEXIT; ?>
 	</form>
    </div>
+   
+   <p></p>
+   <p></p>
+   <p></p>
    
    <?php require FOOTERBAR; ?>
   </div>

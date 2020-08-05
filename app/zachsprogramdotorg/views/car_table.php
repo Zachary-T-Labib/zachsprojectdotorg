@@ -9,6 +9,9 @@
 	<div class="mainholder">
 	<?php require TOPPER; ?>
 	
+	<p></p>
+	<p></p>
+	<p></p>
 	
 	<div class="content">
 		<center><h1>_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_</h1></center>
@@ -45,6 +48,10 @@
             <p>There are no cars.</p>
         <?php endif; ?>
 	</div>
+		
+		<p></p>
+		<p></p>
+		<p></p>
 		
   <?php require FOOTERBAR; ?>
   </div>
