@@ -40,11 +40,13 @@
 	        <?php require SUBMITEXIT; ?>
 	</form>
 </div>
+ 
+ <p></p>
+ <p></p>
+ <p></p> 
+ 
 	<?php require FOOTERBAR; ?>
 	
-	<p></p>
-	<p></p>
-	<p></p>
 	
    </div>
 	
