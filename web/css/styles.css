@@ -17,10 +17,10 @@ a.exit {
 
 .mainholder {
 	background-image: url(/img/mainholder.jpg);
-	height: 950px;
+	max-height: 1000px;
 	max-width: 1100px;
 	margin: auto;
-	padding: 10px;
+	padding: 10px 25px 10px 25px;
 }
 
 .createcarholder {
