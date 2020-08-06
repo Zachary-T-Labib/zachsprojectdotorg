@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+@font-face {
+	font-family: header;
+	scr: url(Ubuntu-Medium.ttf);
+	
+}
+h1 {
+	font-family: header;
+}
+
+@font-face {
+	font-family: p;
+	scr: url(Quantico-Regular.ttf);
+}
+p {
+	font-family: p;
+}
+
 input.green, div.green{ background:#e5f7d9; }
 
 a.green1{ 
