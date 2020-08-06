@@ -90,7 +90,7 @@ a.exit {
     background: cornflowerblue;
     position: static;
     width: 750px;
-    padding: 1px 0 1px 0;
+    padding: 1px 1px 1px 1px;
     margin: auto;
     clear: both;
 }
