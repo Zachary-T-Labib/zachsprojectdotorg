@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: header;
-	scr: url(Ubuntu-Medium.ttf);
+	scr: url(/web/Ubuntu/Ubuntu-Medium.ttf);
 	
 }
 h1 {
@@ -11,7 +11,7 @@ h1 {
 
 @font-face {
 	font-family: p;
-	scr: url(Quantico-Regular.ttf);
+	scr: url(/web/Quantico/Quantico-Regular.ttf);
 }
 p {
 	font-family: p;
