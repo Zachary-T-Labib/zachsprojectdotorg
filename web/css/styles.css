@@ -43,7 +43,7 @@ a.exit {
 .createcarholder {
   max-width: 650px;
   margin: auto;
-  background: cyan;
+  background: #e6ffff;
   padding: 10px;
   border-style: solid;
   border-width: 5px;
@@ -61,7 +61,7 @@ a.exit {
 .content1 {
 		  max-width: 500px;
 		  margin: auto;
-		  background: blue;
+		  background: #e6e6ff;
 		  padding: 10px;
 		  border-style: solid;
 		  border-width: 5px;
@@ -70,7 +70,7 @@ a.exit {
 .content2 {
 		  max-width: 500px;
 		  margin: auto;
-		  background: red;
+		  background: #ffe6e6;
 		  padding: 10px;
 		  border-style: solid;
 		  border-width: 5px;
