@@ -79,7 +79,7 @@ a.exit {
 .car_holder {
   max-width: 1000px;
   margin: auto;
-  background: cyan;
+  background: #e6ffff;
   padding: 10px;
   border-style: solid;
   border-width: 5px;
