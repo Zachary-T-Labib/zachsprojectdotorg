@@ -5,6 +5,8 @@ namespace zachsprogramdotorg\controllers;
 use zachsprogramdotorg\models\User;
 use mysqli;
 
+use function GoodToKnow\ControllerHelpers\is_password_syntactically;
+use function GoodToKnow\ControllerHelpers\is_username_syntactically;
 use function zachsprogramdotorg\controllerhelpers\standard_form_field_prep;
 
 class LoginScript 
