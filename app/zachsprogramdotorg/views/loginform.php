@@ -18,8 +18,6 @@
 		</fieldset>
 		<input type="submit" value="Log In">
 		<div class="utilities">
-			<a><?= ADMINONLOGINFORM ?></a>
-            <?php require SESSIONMESSAGE; ?>
 		</div>
 	</form>
 </body>

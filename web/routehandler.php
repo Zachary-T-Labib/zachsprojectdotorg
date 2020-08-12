@@ -21,6 +21,32 @@ require $path4;
 
 session_start();
 
+$sessionMessage = (isset($_SESSION['message'])) ? $_SESSION['message'] : '';
+$_SESSION['message'] = '';
+
+$user_id = (isset($_SESSION['user_id'])) ? $_SESSION['user_id'] : 0;
+
+$user_username = (isset($_SESSION['user_username'])) ? $_SESSION['user_username'] : '';
+
+$role = (isset($_SESSION['role'])) ? $_SESSION['role'] : '';
+
+$timezone = (isset($_SESSION['timezone'])) ? $_SESSION['timezone'] : 'America/New_York';
+
+$when_last_checked_suspend = (isset($_SESSION['when_last_checked_suspend'])) ? $_SESSION['when_last_checked_suspend'] : 1554825315;
+
+$saved_str01 = (isset($_SESSION['saved_str01'])) ? $_SESSION['saved_str01'] : '';
+
+$saved_str02 = (isset($_SESSION['saved_str02'])) ? $_SESSION['saved_str02'] : '';
+
+$saved_int01 = (isset($_SESSION['saved_int01'])) ? $_SESSION['saved_int01'] : 0;
+
+$saved_int02 = (isset($_SESSION['saved_int02'])) ? $_SESSION['saved_int02'] : 0;
+
+$is_logged_in = (!empty($user_id)) ? true : false;
+
+$is_admin = ($role === 'admin') ? true : false;
+
+
 $route_segments_array = [];
 
 if (!empty($_SERVER['PATH_INFO'])) {
