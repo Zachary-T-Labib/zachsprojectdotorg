@@ -1,11 +1,11 @@
 <?php
 
-namespace GoodToKnow\Controllers;
+namespace zachsprogramdotorg\controllers;
 
-use GoodToKnow\Models\User;
+use zachsprogramdotorg\models\User;
 use mysqli;
 
-use function GoodToKnow\ControllerHelpers\standard_form_field_prep;
+use function zachsprogramdotorg\controllerhelpers\standard_form_field_prep;
 
 class LoginScript 
 {
