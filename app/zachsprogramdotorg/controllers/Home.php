@@ -21,4 +21,5 @@ class Home
                reset_feature_session_vars();
                redirect_to("/zl/LoginForm/page");
            }
+	   }
 }
