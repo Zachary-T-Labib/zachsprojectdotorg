@@ -4,7 +4,7 @@ namespace zachsprogramdotorg\models;
 
 use stdClass;
 
-class User extends GoodObject
+class User extends ZachObject
 {
     /**
      * @var string
