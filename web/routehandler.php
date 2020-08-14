@@ -7,13 +7,14 @@ define('WEB_DIR', PROJ_ROOT . DIRSEP . 'web');
 define('VENDOR_DIR', PROJ_ROOT . DIRSEP . 'vendor');
 
 define('VIEWS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'views');
+define('VIEWSINCLUDES', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'viewsincludes');
 define('CONTROLLERHELPERS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'controllerhelpers');
 define('CONTROLLERINCLUDES', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'controllerincludes');
 
 define('SESSIONMESSAGE', VIEWSINCLUDES . DIRSEP . 'sessionmessage.php');
-define('FOOTERBAR', VIEWS . DIRSEP . 'footerbar.php');
-define('TOPPER', VIEWS . DIRSEP . 'topper.php');
-define('SUBMITEXIT', VIEWS . DIRSEP . 'submitexit.php');
+define('FOOTERBAR', VIEWSINCLUDES . DIRSEP . 'footerbar.php');
+define('TOPPER', VIEWSINCLUDES . DIRSEP . 'topper.php');
+define('SUBMITEXIT', VIEWSINCLUDES . DIRSEP . 'submitexit.php');
 
 $path3 = VENDOR_DIR . DIRSEP . 'autoload.php';
 $path4 = WEB_DIR . DIRSEP . 'functions.php';
