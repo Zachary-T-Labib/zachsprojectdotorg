@@ -18,6 +18,7 @@
 		</fieldset>
 		<input type="submit" value="Log In">
 		<div class="utilities">
+			 <?php require SESSIONMESSAGE; ?>
 		</div>
 	</form>
 </body>

@@ -10,6 +10,7 @@ define('VIEWS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIR
 define('CONTROLLERHELPERS', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'controllerhelpers');
 define('CONTROLLERINCLUDES', PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'controllerincludes');
 
+define('SESSIONMESSAGE', VIEWSINCLUDES . DIRSEP . 'sessionmessage.php');
 define('FOOTERBAR', VIEWS . DIRSEP . 'footerbar.php');
 define('TOPPER', VIEWS . DIRSEP . 'topper.php');
 define('SUBMITEXIT', VIEWS . DIRSEP . 'submitexit.php');
