@@ -113,7 +113,7 @@ class User extends ZachObject
 
                 } else {
 
-                    $user = $result->fetch_object('\zachsprogramdotoeg\models\User');
+                    $user = $result->fetch_object('\zachsprogramdotorg\models\User');
 
                     $stmt->close();
 
