@@ -116,6 +116,9 @@ class User extends ZachObject
                     $user = $result->fetch_object('\zachsprogramdotorg\models\User');
 
                     $stmt->close();
+					
+					var_dump($user);
+					die('test');
 
                 }
             }
