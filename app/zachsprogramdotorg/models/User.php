@@ -117,6 +117,7 @@ class User extends ZachObject
 
                     $stmt->close();
 					
+                                        var_dump($password);
 					var_dump($user);
 					die('test');
 
