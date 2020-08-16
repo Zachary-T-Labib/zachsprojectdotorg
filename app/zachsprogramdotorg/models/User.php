@@ -116,12 +116,8 @@ class User extends ZachObject
                     $user = $result->fetch_object('\zachsprogramdotorg\models\User');
 
                     $stmt->close();
-					
-<<<<<<< HEAD
-                                        var_dump($password);
-=======
+
 					var_dump($password);
->>>>>>> 3bc135dbfccf627ad1932bd12c712657d25e9f27
 					var_dump($user);
 					die('test');
 
