@@ -33,6 +33,8 @@ class LoginScript
 		
         breakout(' It is advisable to logout at least once a week so that your session will Not expire in the middle of
          doing something. ');
+		
+		redirect_to('/zl');
     }
 		
     /**
@@ -77,7 +79,7 @@ class LoginScript
             $error .= " No active account exists for this username. ";
             $_SESSION['message'] = $error;
             reset_feature_session_vars();
-            redirect_to("/ax1/LoginForm/page");
+            redirect_to("/zl/LoginForm/page");
         }
 
         /**
