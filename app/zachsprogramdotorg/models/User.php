@@ -116,6 +116,8 @@ class User extends ZachObject
                     $user = $result->fetch_object('\zachsprogramdotorg\models\User');
 
                     $stmt->close();
+					
+					echo password_hash("OkayUmm80*78##", PASSWORD_DEFAULT);
 
 					var_dump($password);
 					var_dump($user);
