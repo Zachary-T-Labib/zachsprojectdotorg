@@ -11,7 +11,16 @@
 		<a href="/zl/Logout/page">⭕ Log out! </a></h1>
 		
 	</p>
-      
-	  
-	  </body>  
 </div>
+
+<div id="greeter">
+	<p align="center" style="font-size: .78em;">
+		
+		<h3>Welcome, <?php echo $user_username; ?></h3>
+		
+	</p>
+</div>
+</body>
+</html>
+
+	  
