@@ -112,6 +112,19 @@ a.exit {
     clear: both;
 }
 
+#greeter p {
+    margin: 11px;
+}
+
+#greeter {
+    background: cornflowerblue;
+    position: static;
+    width: 250px;
+    padding: 1px 1px 1px 1px;
+    margin: auto;
+    clear: both;
+}
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
