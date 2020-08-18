@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php use zachsprogramdotorg\models\User; ?>
+
 <html>
 
 <body>
@@ -16,7 +18,7 @@
 <div id="greeter">
 	<p align="center" style="font-size: .78em;">
 		
-		<h3>Welcome, <?php echo $user_username; ?></h3>
+		<h3>Welcome, <?php echo $username; ?></h3>
 		
 	</p>
 </div>
