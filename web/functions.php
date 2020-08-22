@@ -32,7 +32,7 @@ function breakout(string $newMessage)
     $sessionMessage = "Hello";
 
     $_SESSION['message'] = $sessionMessage . $newMessage;
-	    redirect_to("/ax1/Home/page");
+	    redirect_to("/zl/Home/page");
 }
 
 function kick_out_nonadmins()
