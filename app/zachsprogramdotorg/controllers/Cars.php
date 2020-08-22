@@ -15,9 +15,6 @@ class Cars
 		$sql = 'SELECT * FROM `carsobject`';
 		$array = CarsObject::find_by_sql($db, $sessionMessage, $sql);
 		
-		if ($array || !empty($sessionMessage)) {
-		            breakout(' I could NOT find any tasks. ');
-		        }
 		
 		require VIEWS . DIRSEP . 'car_table.php';
 	}
