@@ -122,11 +122,9 @@ a.exit {
 
 #greeter {
     background: cornflowerblue;
-    position: static;
     width: 250px;
     padding: 1px 1px 1px 1px;
     margin: auto;
-    clear: both;
     border-style: solid;
     border-width: 4px;
 	display:inline;
@@ -134,11 +132,9 @@ a.exit {
 
 #admindiv {
     background: cornflowerblue;
-    position: static;
     width: 250px;
     padding: 1px 1px 1px 1px;
     margin: auto;
-    clear: both;
     border-style: solid;
     border-width: 4px;
 	display:inline;
