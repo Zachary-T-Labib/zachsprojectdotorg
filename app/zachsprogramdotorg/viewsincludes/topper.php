@@ -18,7 +18,7 @@
 <div id="utilities">
 <div id="greeter">
 		
-		<p><center><h4>Welcome, <?php echo $_SESSION['user_username']; ?> 👔</h4></center></p>
+		<p><center><h2>Welcome, <?php echo $_SESSION['user_username']; ?> 👔</h2></center></p>
 		
 </div>
 
