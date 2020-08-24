@@ -15,6 +15,7 @@
 	</p>
 </div>
 
+<p>
 <div id="greeter">
 		
 		<center><h3 align="center" style="font-size: .78em;" >Welcome, <?php echo $_SESSION['user_username']; ?> 👔</h3></center>
@@ -22,8 +23,9 @@
 </div>
 
 <div id="admindiv">
-	<a href="/zl/AdminTools/page"><img src="/adminbox.png" alt="Admin Panel" height="86" width="108"></a>
+	<a href="/zl/AdminTools/page"><img src="/img/adminbox.png" alt="Admin Panel" height="86" width="108"></a>
 </div>
+</p>
 </body>
 </html>
 
