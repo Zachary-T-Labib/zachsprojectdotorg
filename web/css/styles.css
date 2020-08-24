@@ -129,6 +129,7 @@ a.exit {
     clear: both;
     border-style: solid;
     border-width: 4px;
+	display:inline;
 }
 
 #admindiv {
@@ -140,8 +141,12 @@ a.exit {
     clear: both;
     border-style: solid;
     border-width: 4px;
+	display:inline;
 }
 
+#utilities {
+	text-align:center;
+}
 
 a.button {
     -webkit-appearance: button;
