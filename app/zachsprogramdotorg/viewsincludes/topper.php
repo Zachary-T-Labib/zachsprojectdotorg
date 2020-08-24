@@ -16,11 +16,13 @@
 </div>
 
 <div id="greeter">
-	<p align="center" style="font-size: .78em;">
 		
-		<center><h3>Welcome, <?php echo $_SESSION['user_username']; ?> 👔</h3></center>
+		<center><h3 align="center" style="font-size: .78em;" >Welcome, <?php echo $_SESSION['user_username']; ?> 👔</h3></center>
 		
-	</p>
+</div>
+
+<div id="admindiv">
+	<a href="/zl/AdminTools/page"><img src="/adminbox.png" alt="Admin Panel" height="86" width="108"></a>
 </div>
 </body>
 </html>
