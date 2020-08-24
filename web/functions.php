@@ -32,7 +32,12 @@ function breakout(string $newMessage)
     $sessionMessage = "Hello";
 
     $_SESSION['message'] = $sessionMessage . $newMessage;
-	    redirect_to("/zl/Home/page");
+
+}
+
+function kick()
+{
+     redirect_to("/zl/Home/page");
 }
 
 function kick_out_nonadmins()
@@ -40,7 +45,7 @@ function kick_out_nonadmins()
     global $is_logged_in, $is_admin, $sessionMessage;
 
     if (!$is_logged_in || !$is_admin || !empty($sessionMessage)) {
-        breakout(' You are not authorized. ');
+        kick();
     }
 }
 
