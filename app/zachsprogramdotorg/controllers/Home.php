@@ -8,6 +8,7 @@ class Home
     {
         global $sessionMessage;
         global $is_logged_in;
+		global $is_admin;
 		
 		self::redirect_if_not_logged_in($sessionMessage, $is_logged_in);
 		
