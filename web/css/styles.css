@@ -153,6 +153,12 @@ a.exit {
     justify-content: center;
 }
 
+#userb {
+	background-color: #ff9000;
+	color: #fff;
+	border-radius: 10px;
+}
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;

@@ -32,7 +32,7 @@
 	</div>
 	
 	<div class="tool_holder">
-		<h1>placeholder</h1>
+		<a href="/controllers/UserRoster/page" id="userb" class="btn">User Roster</a>
 	</div>
 	
 	<?php require FOOTERBAR; ?>
