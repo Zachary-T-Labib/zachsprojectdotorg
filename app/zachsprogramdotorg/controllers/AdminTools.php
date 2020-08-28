@@ -19,6 +19,6 @@ class AdminTools
 		
 		$sessionMessage .= " Welcome to your Tools. ";
 		
-		require VIEWS . DIRSEP . 'controlpanel.php';
+		require VIEWS . DIRSEP . 'adminpanel.php';
 	}
 }
