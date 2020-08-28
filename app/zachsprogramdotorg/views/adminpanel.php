@@ -20,15 +20,15 @@
 	<?php require TOPPER; ?>
 	
 	<div class="tool_holder">
-		<center><h1>|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|</h1></center>
+		<center><h1>|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|</h1></center>
 		<p></p>
 		<p></p>
 		<p></p>
-		<center><h1>Tools & Management</h1></center>
+		<center><h1>Tools & Management          [Admin]</h1></center>
 		<p></p>
 		<p></p>
 		<p></p>
-		<center><h1>|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|</h1></center>
+		<center><h1>|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|_|=|</h1></center>
 	</div>
 	
 	<div class="tool_holder">
