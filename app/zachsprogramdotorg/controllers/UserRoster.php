@@ -4,7 +4,7 @@ namespace zachsprogramdotorg\controlllers;
 
 use zachsprogramdotorg\models\Users;
 
-class Cars
+class UserRoster
 {
 	function page()
 	{
