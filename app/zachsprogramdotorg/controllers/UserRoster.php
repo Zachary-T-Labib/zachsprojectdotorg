@@ -8,7 +8,7 @@ class Cars
 {
 	function page()
 	{
-		global $sessionMessage
+		global $sessionMessage;
 			
 		$db = get_db();
 		
