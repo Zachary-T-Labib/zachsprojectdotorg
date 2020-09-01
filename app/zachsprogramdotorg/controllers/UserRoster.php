@@ -1,6 +1,6 @@
 <?php
 
-namespace zachsprogramdotorg\controlllers;
+namespace zachsprogramdotorg\controllers;
 
 use zachsprogramdotorg\models\Users;
 
