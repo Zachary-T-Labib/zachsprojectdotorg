@@ -23,7 +23,7 @@
 	<?php require TOPPER; ?>
 	
 	<div class="tool_holder">
-		<center><h1>-------- User Roster --------</h1></center>
+		<center><h1>------------------------ User Roster ------------------------</h1></center>
 	</div>
 	
 	<div class="tool_holder">
