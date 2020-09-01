@@ -2,7 +2,7 @@
 
 namespace zachsprogramdotorg\controllers;
 
-use zachsprogramdotorg\models\Users;
+use zachsprogramdotorg\models\User;
 
 class UserRoster
 {
@@ -13,7 +13,7 @@ class UserRoster
 		$db = get_db();
 		
 		$sql = 'SELECT * FROM `users`';
-		$array = Users::find_by_sql($db, $sessionMessage, $sql);
+		$array = User::find_by_sql($db, $sessionMessage, $sql);
 		
 		require VIEWS . DIRSEP . "userroster.php";
 	}
