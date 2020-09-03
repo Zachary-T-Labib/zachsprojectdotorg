@@ -44,7 +44,7 @@ function kick_out_nonadmins()
 {
     global $is_logged_in, $is_admin, $sessionMessage;
 
-    if (!$is_logged_in || !$is_admin || !empty($sessionMessage)) {
+    if (!$is_logged_in OR !$is_admin) {
         kick();
     }
 }

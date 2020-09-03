@@ -9,6 +9,8 @@ class UserRoster
 	function page()
 	{
 		global $sessionMessage;
+		
+		kick_out_nonadmins();
 			
 		$db = get_db();
 		
