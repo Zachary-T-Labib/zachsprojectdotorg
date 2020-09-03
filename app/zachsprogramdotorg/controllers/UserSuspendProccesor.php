@@ -27,6 +27,6 @@ class UserSuspendProccessor
 		
         $_SESSION['saved_str01'] = $submitted_username;
 
-        redirect_to("/zl/SuspendAccountSuspend/page");
+        redirect_to("/zl/UserSuspendSuspend/page");
 	}
 }
