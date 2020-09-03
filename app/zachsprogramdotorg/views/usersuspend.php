@@ -24,7 +24,7 @@
 	
 	<div class="tool_holder">
 		
-		<form action="/ax1/SuspendAccountProcessor/page" method="post">
+		<form action="/zl/UserSuspendProcessor/page" method="post">
 		    <center><h1>(---Suspend User---)</h1></center>
 		    <center><?php require SESSIONMESSAGE; ?></center>
 		    <p>Enter the Username</p>
