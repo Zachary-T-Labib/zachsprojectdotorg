@@ -32,7 +32,13 @@
 	</div>
 	
 	<div class="tool_holder">
+		<p></p>
+		<p></p>
+		<p></p>
 		<a href="/zl/UserRoster/page" id="userb" class="btn">Users</a>
+		<p></p>
+		<p></p>
+		<p></p>
 	</div>
 	
 	<?php require FOOTERBAR; ?>
