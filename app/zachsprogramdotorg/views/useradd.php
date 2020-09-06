@@ -78,6 +78,7 @@
 				</p>
 			</section>
 			<?php require SUBMITEXIT; ?>
+		</div>
 		</form>
 	    <?php require FOOTERBAR; ?>
 	</div>
