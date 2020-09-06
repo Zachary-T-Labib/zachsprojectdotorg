@@ -79,7 +79,7 @@
 			</section>
 			<?php require SUBMITEXIT; ?>
 		</form>
-	    <?php require FOOTER; ?>
+	    <?php require FOOTERBAR; ?>
 	</div>
 </body>
 </html>
