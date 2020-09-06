@@ -12,6 +12,6 @@ class UserAdd
 		
 		
 		
-		require VIEWS . DIRSEP . 'adminpasscodegenformprocessor.php';
+		require VIEWS . DIRSEP . 'useradd.php';
 	}
 }
