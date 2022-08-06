@@ -24,6 +24,7 @@
 	
 	<div class="tool_holder">
 		<center><h1>------------------------ User Roster ------------------------</h1></center>
+		<center><?php require SESSIONMESSAGE; ?></center>
 	</div>
 	
 	<div class="tool_holder">
