@@ -10,7 +10,7 @@ class UserAdd
 
         kick_out_nonadmins();
 		
-		
+		get_db();
 		
 		require VIEWS . DIRSEP . 'useradd.php';
 	}
