@@ -36,7 +36,7 @@
 		
         <?php if (!empty($array)): ?>
             <?php foreach ($array as $key => $object): ?>
-                <p>⇀ <em>Username: <?= $object->username ?></em> -- Role: <?= $object->role ?></p>
+                <p>⇀ <em>Username: <?= $object->username ?></em> -- Role: <?= $object->role ?> -- Suspended? <?= if ($object->is_suspended = 0) {False} else {True} ?></p>
             <?php endforeach; ?>
         <?php else: ?>
             <p>There are no users.</p>
