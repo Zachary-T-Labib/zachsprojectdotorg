@@ -25,6 +25,11 @@
 <div id="admindiv">
 	<center><a href="/zl/AdminTools/page"><img src="/img/adminbox.png" alt="Admin Panel" height="86" width="108"></a></center>
 </div>
+
+<div id="sessionmsg">
+	<p><center><h2><?php require SESSIONMESSAGE; ?></h2></center></p>
+</div>
+
 </div>
 
 </body>
