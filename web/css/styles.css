@@ -78,8 +78,7 @@ a.exit {
 		}
 		
 .car_holder {
-  max-width: 1000px;
-  max-width: 750px;
+  max-width: 738px;
   margin: auto;
   background: #ffffe6;
   padding: 10px;
@@ -105,7 +104,7 @@ a.exit {
 #footerbar {
     background: cornflowerblue;
     position: static;
-    width: 1000px;
+    width: 760px;
     padding: 1px 0 1px 0;
     margin: auto;
     clear: both;
@@ -134,7 +133,7 @@ a.exit {
 
 #greeter {
     background: cornflowerblue;
-    width: 250px;
+    width: 243.333px;
     padding: 1px 1px 1px 1px;
     border-style: solid;
     border-width: 4px;
@@ -142,7 +141,7 @@ a.exit {
 
 #admindiv {
     background: cornflowerblue;
-    width: 250px;
+    width: 243.333px;
     padding: 1px 1px 1px 1px;
     border-style: solid;
     border-width: 4px;
@@ -154,7 +153,7 @@ a.exit {
 
 #sessionmsg {
     background: cornflowerblue;
-    width: 250px;
+    width: 243.333px;
     padding: 1px 1px 1px 1px;
     border-style: solid;
     border-width: 4px;
