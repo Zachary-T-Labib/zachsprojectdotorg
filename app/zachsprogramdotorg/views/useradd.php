@@ -22,7 +22,7 @@
 	<div class="mainholder">
 		<?php require TOPPER; ?>
 		
-		<form action="/zl/CreateUser/page" method="post">
+		<form action="/zl/UserAddData/page" method="post">
 			
 		<div class="tool_holder">
 			<center><h1>(---Add User---)</h1></center>
