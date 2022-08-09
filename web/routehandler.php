@@ -6,9 +6,6 @@ require(__DIR__ . '/../config.php');
 
 require('constant_definitions.php');
 
-define('WEB_DIR', PROJ_ROOT . DIRSEP . 'web');
-define('VENDOR_DIR', PROJ_ROOT . DIRSEP . 'vendor');
-
 $path3 = VENDOR_DIR . DIRSEP . 'autoload.php';
 $path4 = WEB_DIR . DIRSEP . 'functions.php';
 require $path3;
@@ -29,7 +26,7 @@ if (!empty($_SERVER['PATH_INFO'])) {
     $route_segments_array = explode('/', $route);
 }
 
-$g->controller_name = 'home';    // Default controller
+$g->controller_name = 'Home';    // Default controller
 
 if (!empty($route_segments_array[0])) {
     $route_segments_array[0] = convert_snake_case_to_pascal_case($route_segments_array[0]);
