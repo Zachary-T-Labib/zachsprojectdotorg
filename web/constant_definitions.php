@@ -12,11 +12,11 @@ const FIRSTMIDDLESEQNUM = 10500000;
  * of the directory for view includes and for
  * the files for view includes.
  */
-const VIEWS = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'Views';
-const VIEWSINCLUDES = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ViewsIncludes';
-const CONTROLLERHELPERS = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ControllerHelpers';
-const CONTROLLERINCLUDES = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ControllerIncludes';
-const VIEWSDUPLICATESINCLUDES = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'ViewsDuplicatesIncludes';
+const VIEWS = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'views';
+const VIEWSINCLUDES = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'viewsincludes';
+const CONTROLLERHELPERS = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'controllerhelpers';
+const CONTROLLERINCLUDES = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'controllerincludes';
+const VIEWSDUPLICATESINCLUDES = PROJ_ROOT . DIRSEP . 'app' . DIRSEP . 'zachsprogramdotorg' . DIRSEP . 'viewsduplicatesincludes';
 
 define('SESSIONMESSAGE', VIEWSINCLUDES . DIRSEP . 'sessionmessage.php');
 define('FOOTERBAR', VIEWSINCLUDES . DIRSEP . 'footerbar.php');
