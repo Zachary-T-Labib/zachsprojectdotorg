@@ -8,7 +8,7 @@ class Cars
 {
 	function page()
     {	
-		get_db();
+		$g->db = get_db();
 		
 		$sql = 'SELECT * FROM `carsobject`';
 		$array = CarsObject::find_by_sql($sql);
