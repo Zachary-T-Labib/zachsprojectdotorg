@@ -1,6 +1,6 @@
 <?php
 
-namespace zachsprogramdotorg\controlerhelpers;
+namespace zachsprogramdotorg\controllerhelpers;
 
 use mysqli;
 
