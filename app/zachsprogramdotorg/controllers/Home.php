@@ -16,7 +16,7 @@ class Home
 	
     private static function redirect_if_not_logged_in()
        {
-		   global $g
+		   global $g;
 		   
 		   if (!$g->is_logged_in) {
 
