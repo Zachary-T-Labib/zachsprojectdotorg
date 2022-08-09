@@ -74,8 +74,9 @@ class User extends ZachObject
      * @param string $password
      * @return bool|object|stdClass
      */
-    public static function authenticate(\mysqli $db, string &$error, string $username, string $password)
+    public static function authenticate(string $username, string $password)
     {
+		global $g;
         /**
          * What you see here could have been done using the find_by_sql
          * but I chose to do this explicitly using a prepared statement since
@@ -88,11 +89,11 @@ class User extends ZachObject
                     WHERE `username` = ?
                     LIMIT 1';
 
-            $stmt = $db->stmt_init();
+            $stmt = $g->db->stmt_init();
 
             if (!$stmt->prepare($sql)) {
 
-                $error .= $stmt->error . ' ';
+                $g->message .= $stmt->error . ' ';
 
                 return false;
 
@@ -120,7 +121,7 @@ class User extends ZachObject
             }
         } catch (\Exception $e) {
 
-            $error .= ' User::authenticate() caught a thrown exception: ' .
+            $g->message .= ' User::authenticate() caught a thrown exception: ' .
                 htmlspecialchars($e->getMessage(), ENT_NOQUOTES | ENT_HTML5) . ' ';
 
             return false;
@@ -129,7 +130,7 @@ class User extends ZachObject
 
         if (!password_verify($password, $user->password)) {
 
-            $error .= " Authentication failed! ";
+            $g->message .= " Authentication failed! ";
 
             return false;
         }
@@ -143,12 +144,14 @@ class User extends ZachObject
      * @param string $username
      * @return bool
      */
-    public static function is_taken_username(\mysqli $db, string &$error, string $username)
+    public static function is_taken_username(string $username): bool
     {
+		global $g;
+		
         $sql = 'SELECT `username` FROM `users`
-                WHERE `username` = "' . $db->real_escape_string($username) . '" LIMIT 1';
+                WHERE `username` = "' . $g->db->real_escape_string($username) . '" LIMIT 1';
 
-        $array_of_User_objects = parent::find_by_sql($db, $error, $sql);
+        $array_of_User_objects = parent::find_by_sql($sql);
 
         if (!$array_of_User_objects) {
 
@@ -165,17 +168,19 @@ class User extends ZachObject
      * @param string $username
      * @return bool|mixed
      */
-    public static function find_by_username(\mysqli $db, string &$error, string $username)
+    public static function find_by_username(string $username)
     {
         /**
          * You give it a username and it returns the
          * corresponding User object or false.
          */
+		
+		global $g;
 
         $sql = 'SELECT * FROM `users`
-                WHERE `username` = "' . $db->real_escape_string($username) . '" LIMIT 1';
+                WHERE `username` = "' . $g->db->real_escape_string($username) . '" LIMIT 1';
 
-        $array_of_User_objects = parent::find_by_sql($db, $error, $sql);
+        $array_of_User_objects = parent::find_by_sql($sql);
 
         if (!$array_of_User_objects || !empty($error)) {
 

@@ -8,6 +8,7 @@ namespace zachsprogramdotorg\controllerhelpers;
  */
 function is_username_syntactically(string &$username): bool
 {
+	global $g;
     /**
      * Returns true if $username fits the requirements for what a GTK.io username should look like.
      * Otherwise returns false.
