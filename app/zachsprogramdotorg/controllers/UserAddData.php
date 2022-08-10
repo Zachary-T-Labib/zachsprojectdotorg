@@ -79,6 +79,8 @@ class UserAddData
             'date' => $submitted_date,
             'comment' => $submitted_comment];
 			
+			var_dump($array_of_submitted_data);
+			
 		
 		//Second step
 		
