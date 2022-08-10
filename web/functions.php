@@ -4,6 +4,10 @@ $newMessage = "Hello";
 
 function redirect_to(string $location)
 {
+	global $g;
+	
+    $_SESSION['message'] = $g->message;
+	
 	if ($location != NULL) {
 
 		header("Location: {$location}");
@@ -27,11 +31,11 @@ function reset_feature_session_vars()
 
 function breakout(string $newMessage)
 {
-    global $sessionMessage;
+    global $g;
 
-    $sessionMessage = "Hello";
+    $g->message = $newMessage;
 
-    $_SESSION['message'] = $sessionMessage . $newMessage;
+    redirect_to("/zl/Home/page");
 
 }
 
@@ -42,49 +46,51 @@ function kick()
 
 function kick_out_nonadmins()
 {
-    global $is_logged_in, $is_admin, $sessionMessage;
+    global $g;
 
-    if (!$is_logged_in OR !$is_admin) {
+    if (!$g->is_logged_in OR !$g->is_admin) {
         kick();
     }
 }
 
 function get_db()
 {
-    global $sessionMessage;
+    global $g;
 
-    $sessionMessage = "Hello";
+    $g->message = "Hello";
 
-    $db = db_connect($sessionMessage);
+    $g->db = db_connect();
 
-    if (!empty($sessionMessage) || $db === false) {
+    if ($g->db === false) {
         breakout(' I was unable to connect to the database. ');
     }
 
-    return $db;
+    return $g->db;
 }
 
-function db_connect(string &$error)
+function db_connect()
 {
+		global $g;
+		
     try {
 
-        $db = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+        $g->db = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 
-        if ($db->connect_error) {
+        if ($g->db->connect_error) {
 
-            $error .= ' ' . htmlspecialchars($db->connect_error, ENT_NOQUOTES | ENT_HTML5) . ' ';
+            $g->message .= ' ' . htmlspecialchars($g->db->connect_error, ENT_NOQUOTES | ENT_HTML5) . ' ';
             return false;
 
         }
 
-        $db->set_charset('utf8mb4');
+        $g->db->set_charset('utf8mb4');
 
     } catch (\Exception $e) {
 
-        $error .= ' ' . htmlspecialchars($e->getMessage(), ENT_NOQUOTES | ENT_HTML5) . ' ';
+        $g->message .= ' ' . htmlspecialchars($e->getMessage(), ENT_NOQUOTES | ENT_HTML5) . ' ';
         return false;
 
     }
 
-    return $db;
+    return $g->db;
 }
