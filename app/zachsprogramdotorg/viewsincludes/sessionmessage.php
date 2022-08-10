@@ -1,3 +1,3 @@
-<?php if (!empty($sessionMessage)): ?>
+<?php if (!empty($g->message)): ?>
     <p>‼️:&nbsp;&nbsp;<?= $g->message ?></p>
 <?php endif; ?>
