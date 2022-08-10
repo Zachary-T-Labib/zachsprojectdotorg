@@ -34,8 +34,8 @@
 		
 		<center><h2>User List</h2></center>
 		
-        <?php if (!empty($array)): ?>
-            <?php foreach ($array as $key => $object): ?>
+        <?php if (!empty($g->array)): ?>
+            <?php foreach ($g->array as $key => $object): ?>
                 <p>⇀ <em>Username: <?= $object->username ?></em> -- Role: <?= $object->role ?> -- Suspended? <?= $object->is_suspended ?></p>
             <?php endforeach; ?>
         <?php else: ?>

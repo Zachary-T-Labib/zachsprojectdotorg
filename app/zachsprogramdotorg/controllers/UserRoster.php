@@ -8,14 +8,16 @@ class UserRoster
 {
 	function page()
 	{
-		global $sessionMessage;
+		global $g;
 		
 		kick_out_nonadmins();
 			
-		$db = get_db();
+	    get_db();
+		
+		$g->db = get_db();
 		
 		$sql = 'SELECT * FROM `users`';
-		$array = User::find_by_sql($db, $sessionMessage, $sql);
+		$g->array = User::find_by_sql($sql);
 		
 		require VIEWS . DIRSEP . "userroster.php";
 	}

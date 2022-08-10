@@ -6,7 +6,7 @@ class UserAdd
 {
 	function page()
 	{
-        global $sessionMessage;
+        global $g;
 
         kick_out_nonadmins();
 		

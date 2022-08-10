@@ -22,6 +22,8 @@ class UserAddData
 		
 		get_db();
 		
+		$g->db = get_db();
+		
         /**
          * Variables to work with:
          *   $g->saved_int01, 'username', 'first_try', 'password',
