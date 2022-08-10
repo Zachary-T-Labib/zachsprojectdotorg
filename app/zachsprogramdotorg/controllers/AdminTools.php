@@ -6,18 +6,15 @@ class AdminTools
 {
 	function page()
 	{
-        global $is_logged_in;
-        global $is_admin;
-		global $sessionMessage;
-		global $type_of_resource_requested;
+		global $g;
 		
-        if (!$is_logged_in OR !$is_admin) {
+        if (!$g->is_logged_in OR !$g->is_admin) {
             kick();
         }
 		
 		$show_poof = true;
 		
-		$sessionMessage .= " Welcome to your Tools. ";
+		$g->message .= " Welcome to your Tools. ";
 		
 		require VIEWS . DIRSEP . 'adminpanel.php';
 	}
