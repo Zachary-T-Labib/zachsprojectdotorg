@@ -50,8 +50,8 @@
 		<p></p>
 		<p></p>
 		<p></p>
-        <?php if (!empty($array)): ?>
-            <?php foreach ($array as $key => $object): ?>
+        <?php if (!empty($g->array)): ?>
+            <?php foreach ($g->array as $key => $object): ?>
                 <p>⇀ <em>License Plate: <?= $object->LicensePlate ?></em> -- Type: <?= $object->Type ?> -- Brand: <?= $object->Brand ?> -- Seats: <?= $object->Seats ?></p>
             <?php endforeach; ?>
         <?php else: ?>
