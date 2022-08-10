@@ -15,7 +15,7 @@ $chosen_id = integer_form_field_prep('choice', 1, PHP_INT_MAX);
 
 var_dump($chosen_id);
 
-$g->saved_int01 = $chosen_id;
+$_SESSION['saved_int01'] = $chosen_id;
 
 
 
