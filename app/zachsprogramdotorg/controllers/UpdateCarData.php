@@ -18,8 +18,8 @@ class UpdateCarData
 	         * 5) Report success.
 	         */
 	
-	global $sessionMessage;
-	$sessionMessage = "Hello";	
+	global $g;
+	$g->message = "Hello";	
 	
 	require_once CONTROLLERHELPERS . DIRSEP . 'standard_form_field_prep.php';
 	
@@ -28,10 +28,10 @@ class UpdateCarData
 	$edited_Brand = standard_form_field_prep('Brand', 1, 30);
 	$edited_Seats = standard_form_field_prep('Seats', 1, 16);
 	
-	$db = get_db();
+	$g->db = get_db();
 	
 	
-	$object = CarsObject::find_by_id($db, $sessionMessage, $_SESSION['saved_int01']);
+	$object = CarsObject::find_by_id($_SESSION['saved_int01']);
 	
 	
 	if (!$object) {
@@ -45,7 +45,7 @@ class UpdateCarData
 	$object->Brand = $edited_Brand;
 	$object->Seats = $edited_Seats;
 	
-	$result = $object->save($db, $sessionMessage);
+	$result = $object->save();
 	
 	if ($result === false) {
 

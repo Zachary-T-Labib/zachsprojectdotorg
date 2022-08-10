@@ -13,14 +13,15 @@ class UpdateCar
          * Present the Task(s/plural) as radio buttons.
          */
 		
-		global $sessionMessage;
-		$sessionMessage = "Hello";
+		global $g;
 		
-		$db = get_db();
+		get_db();
+		
+		$g->db = get_db();
 		
 		$sql = 'SELECT * FROM `carsobject`';
 		
-		$array = CarsObject::find_by_sql($db, $sessionMessage, $sql);
+		$g->array = CarsObject::find_by_sql($sql);
 		
         require VIEWS . DIRSEP . 'updatecar.php';
 		
