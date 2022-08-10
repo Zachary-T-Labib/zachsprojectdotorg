@@ -12,9 +12,9 @@ class CreateCarData
 	function page()
     {
 		
-		global $sessionMessage;
+		global $g;
 		
-		$sessionMessage = "Hello";
+		$g->message = "Hello";
 		
 		require_once CONTROLLERHELPERS . DIRSEP . 'standard_form_field_prep.php';
 		
@@ -23,13 +23,13 @@ class CreateCarData
 		$Brand = standard_form_field_prep('Brand', 3, 30);
 		$Seats = standard_form_field_prep('Seats', 1, 16);
 		
-		$db = get_db();
+		$g->db = get_db();
 		
 		$array_record = ['LicensePlate' => $LicensePlate, 'Type' => $Type, 'Brand' => $Brand, 'Seats' => $Seats];
 		
 		$object = CarsObject::array_to_object($array_record);
 		
-		$result = $object->save($db, $sessionMessage);
+		$result = $object->save();
 		
 		if (!$result) {
 
