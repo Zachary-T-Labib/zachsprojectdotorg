@@ -23,7 +23,7 @@ class CreateCarData
 		$Brand = standard_form_field_prep('Brand', 3, 30);
 		$Seats = standard_form_field_prep('Seats', 1, 16);
 		
-		$g->db = get_db();
+		get_db();
 		
 		$array_record = ['LicensePlate' => $LicensePlate, 'Type' => $Type, 'Brand' => $Brand, 'Seats' => $Seats];
 		
@@ -33,7 +33,7 @@ class CreateCarData
 		
 		if (!$result) {
 
-		            breakout(' The object\'s save method returned false. ');
+		            breakout(' The objects save method returned false. ');
 
 		}
 		
