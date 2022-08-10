@@ -14,6 +14,8 @@ class Cars
 		
 		$sql = 'SELECT * FROM `carsobject`';
 		
+		$g->db = get_db();
+		
 		var_dump($g);
 		
 		$g->array = CarsObject::find_by_sql($sql);
