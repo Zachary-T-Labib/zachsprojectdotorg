@@ -3,9 +3,9 @@
 use zachsprogramdotorg\models\CarsObject;
 use function zachsprogramdotorg\controllerhelpers\integer_form_field_prep;
 
-global $sessionMessage;
+global $g;
 
-$sessionMessage = "Hello";
+$g->message = "Hello";
 
 reset_feature_session_vars();
 
@@ -13,13 +13,13 @@ require_once CONTROLLERHELPERS . DIRSEP . 'integer_form_field_prep.php';
 
 $chosen_id = integer_form_field_prep('choice', 1, PHP_INT_MAX);
 
-$_SESSION['saved_int01'] = $chosen_id;
+$g->saved_int01 = $chosen_id;
 
 
 
-$db = get_db();
+$g->db = get_db();
 
-$object = CarsObject::find_by_id($db, $sessionMessage, $chosen_id);
+$object = CarsObject::find_by_id($chosen_id);
 
 if (!$object) {
 

@@ -8,14 +8,16 @@ class DeleteCar
 {
 	function page()
 	{
-		global $sessionMessage;
+		global $g;
 		
-		$sessionMessage = "Hello";
+		get_db();
 		
-		$db = get_db();
+		$g->message = "Hello";
+		
+		$g->db = get_db();
 		
 		$sql = 'SELECT * FROM `carsobject`';
-		$array = CarsObject::find_by_sql($db, $sessionMessage, $sql);
+		$array = CarsObject::find_by_sql($sql);
 		
 		
 		require VIEWS . DIRSEP . 'deletecar.php';

@@ -11,10 +11,8 @@ class DeleteCarData
 	function page()
 	{
 		
-        global $sessionMessage;
-		$sessionMessage = "Hello";
-		
-        global $saved_int01;
+        global $g;
+		$g->message = "Hello";
 
 		require_once CONTROLLERHELPERS . DIRSEP . 'yes_no_form_field_prep.php';
 		
@@ -29,9 +27,9 @@ class DeleteCarData
 		
 		if ($choice == "yes") {
 		
-		$db = get_db();
+		$g->db = get_db();
 		
-		$object = CarsObject::find_by_id($db, $sessionMessage, $_SESSION['saved_int01']);
+		$object = CarsObject::find_by_id($g->saved_int01);
 		
 		if (!$object) {
 
@@ -39,7 +37,7 @@ class DeleteCarData
 
 		}
 		
-		$result = $object->delete($db, $sessionMessage);
+		$result = $object->delete();
 		
 		if (!$result) {
 

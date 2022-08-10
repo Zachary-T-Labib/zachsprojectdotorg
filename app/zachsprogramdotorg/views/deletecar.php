@@ -32,7 +32,7 @@
 		<h4>Which Car?</h4>
 		<section>
 			<?php /** @noinspection PhpUndefinedVariableInspection */
-			foreach ($array as $key => $object): ?>
+			foreach ($g->array as $key => $object): ?>
 			<label for="c<?php echo $key; ?>" class="radio">
 				<input type="radio" id="c<?= $key ?>" name="choice" value="<?= $object->id ?>">
 				<?= $object->LicensePlate ?>

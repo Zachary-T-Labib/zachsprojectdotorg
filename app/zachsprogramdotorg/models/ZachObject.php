@@ -326,8 +326,8 @@ abstract class ZachObject
 			    {
 					global $g;
 					
-			        $result_array = static::find_by_sql($db, $error, "SELECT * FROM " . static::$table_name . "
-						WHERE `id`=" . $g->db->real_escape_string($id) . " LIMIT 1");
+			        $result_array = static::find_by_sql("SELECT * FROM " . static::$table_name . "
+						WHERE `id`=" . $g->db->real_escape_string((string)$id) . " LIMIT 1");
 
 			        return !empty($result_array) ? array_shift($result_array) : false;
 			    }
