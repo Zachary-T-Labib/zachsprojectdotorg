@@ -10,8 +10,10 @@ class Cars
     {	
 		global $g;
 		
+		get_db();
+		
 		$sql = 'SELECT * FROM `carsobject`';
-		$array = CarsObject::find_by_sql($sql);
+		$g->array = CarsObject::find_by_sql($sql);
 		
 		
 		require VIEWS . DIRSEP . 'car_table.php';
