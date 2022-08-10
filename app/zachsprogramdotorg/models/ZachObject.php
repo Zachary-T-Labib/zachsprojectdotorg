@@ -112,7 +112,7 @@ abstract class ZachObject
 	          try {
 	              // Gets array of this object's attributes
 
-	              $attributes = $this->sanitized_attributes($db);
+	              $attributes = $this->sanitized_attributes();
 
 
 	              // Pop off the first element
@@ -403,7 +403,7 @@ abstract class ZachObject
 	        }
 
 	        try {
-	            $attributes = $this->sanitized_attributes($db);
+	            $attributes = $this->sanitized_attributes();
 
 	            array_shift($attributes);
 
@@ -435,7 +435,7 @@ abstract class ZachObject
 
 	            $sql = "UPDATE " . static::$table_name . " SET ";
 	            $sql .= join(", ", $attribute_pairs);
-	            $sql .= " WHERE `id`=" . $g->db->real_escape_string($this->id) . " LIMIT 1";
+	            $sql .= " WHERE `id`=" . $g->db->real_escape_string((string)$this->id) . " LIMIT 1";
 
 	            $g->db->query($sql);
 
