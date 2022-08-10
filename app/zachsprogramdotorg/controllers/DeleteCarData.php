@@ -29,7 +29,7 @@ class DeleteCarData
 		
 		$g->db = get_db();
 		
-		$object = CarsObject::find_by_id($g->saved_int01);
+		$object = CarsObject::find_by_id($_SESSION['saved_int01']);
 		
 		if (!$object) {
 
