@@ -17,7 +17,7 @@ class DeleteCar
 		$g->db = get_db();
 		
 		$sql = 'SELECT * FROM `carsobject`';
-		$array = CarsObject::find_by_sql($sql);
+		$g->array = CarsObject::find_by_sql($sql);
 		
 		
 		require VIEWS . DIRSEP . 'deletecar.php';
