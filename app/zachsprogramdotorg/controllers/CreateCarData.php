@@ -27,6 +27,10 @@ class CreateCarData
 		
 		$array_record = ['LicensePlate' => $LicensePlate, 'Type' => $Type, 'Brand' => $Brand, 'Seats' => $Seats];
 		
+		ob_start();
+		
+		var_dump($array_record);
+		
 		$object = CarsObject::array_to_object($array_record);
 		
 		$result = $object->save();
