@@ -6,8 +6,6 @@ function redirect_to(string $location)
 {
 	global $g;
 	
-    $_SESSION['message'] = $g->message;
-	
 	if ($location != NULL) {
 
 		header("Location: {$location}");
